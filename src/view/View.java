@@ -4,7 +4,7 @@
  */
 package view;
 
-import model.ListaEstatica;
+import model_lista_estatica.ListaEstatica;
 
 /**
  *

@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-package model_lista_estatica;
+package lista_estatica_test;
 
-import model_lista_estatica.ListaEstatica;
+import lista_estatica_model.ListaEstatica;
+import lista_estatica_model.ListaEstatica;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

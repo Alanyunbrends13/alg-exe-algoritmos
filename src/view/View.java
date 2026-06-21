@@ -4,7 +4,8 @@
  */
 package view;
 
-import model_lista_estatica.ListaEstatica;
+import lista_generica_model.ListaEstatica;
+
 
 /**
  *
@@ -17,7 +18,7 @@ public class View {
         lista.inserir(10);
         lista.inserir(15);
         lista.inserir(20);
-        lista.retirar(10);
+        lista.inverter();
         System.out.println(lista.toString());
     }
 }

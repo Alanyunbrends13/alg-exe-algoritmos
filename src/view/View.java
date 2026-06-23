@@ -4,7 +4,9 @@
  */
 package view;
 
-import lista_generica_model.ListaEstatica;
+import lista_encadeada_model.ListaEncadeada;
+
+
 
 
 /**
@@ -13,12 +15,12 @@ import lista_generica_model.ListaEstatica;
  */
 public class View {
     public static void main(String[] args) {
-        ListaEstatica lista = new ListaEstatica();
+        ListaEncadeada lista = new ListaEncadeada();        
         lista.inserir(5);
         lista.inserir(10);
         lista.inserir(15);
         lista.inserir(20);
-        lista.inverter();
+        lista.retirar(20);
         System.out.println(lista.toString());
     }
 }

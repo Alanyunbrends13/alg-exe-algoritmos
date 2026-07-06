@@ -4,7 +4,7 @@
  */
 package view;
 
-import lista_encadeada_model.ListaEncadeada;
+import lista_duplaEncadeada_model.ListaDupla;
 
 
 
@@ -15,12 +15,12 @@ import lista_encadeada_model.ListaEncadeada;
  */
 public class View {
     public static void main(String[] args) {
-        ListaEncadeada lista = new ListaEncadeada();        
+        ListaDupla lista = new ListaDupla();
         lista.inserir(5);
         lista.inserir(10);
         lista.inserir(15);
         lista.inserir(20);
-        lista.retirar(20);
-        System.out.println(lista.toString());
+        
+        lista.buscar(20);
     }
 }

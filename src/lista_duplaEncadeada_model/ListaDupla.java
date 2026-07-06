@@ -44,9 +44,10 @@ public class ListaDupla<T> {
         NoListaDupla p = this.primeiro;
         
         while(p != null){
-            if(p.equals(valor)){
+            if(p.getInfo().equals(valor)){
                 return p;
             }
+            p = p.getProximo();
         }
         
         return null;
@@ -79,6 +80,7 @@ public class ListaDupla<T> {
             if(p.getProximo() == null){ //final da lista
                 ultimo = p;
             }
+            p = p.getProximo();
         }
         
         p = ultimo;
@@ -96,8 +98,23 @@ public class ListaDupla<T> {
         
     }
     
+    /**
+     * Faz backup do próximo nó e elimina ligações do nó atual
+     */
     public void liberar(){
+        NoListaDupla<T> p = primeiro;
         
+        while(p != null){
+            //guarda o nó antes de descartar ligação
+            NoListaDupla<T> var = p.getProximo();
+            
+            p.setProximo(null);
+            p.setAnterior(null);
+            
+            p = var;            
+        }
+        
+        this.primeiro = null;
     }
     
     @Override

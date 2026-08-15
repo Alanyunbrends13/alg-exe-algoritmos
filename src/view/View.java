@@ -4,7 +4,7 @@
  */
 package view;
 
-import lista_duplaEncadeada_model.ListaDupla;
+import pilha_vetor_model.PilhaVetor;
 
 
 
@@ -15,12 +15,17 @@ import lista_duplaEncadeada_model.ListaDupla;
  */
 public class View {
     public static void main(String[] args) {
-        ListaDupla lista = new ListaDupla();
-        lista.inserir(5);
-        lista.inserir(10);
-        lista.inserir(15);
-        lista.inserir(20);
+        PilhaVetor pilhaA = new PilhaVetor(5);
+        pilhaA.push(10);
+        pilhaA.push(20);
+        pilhaA.push(30);
         
-        lista.buscar(20);
+        PilhaVetor pilhaB = new PilhaVetor(5);
+        pilhaB.push(40);
+        pilhaB.push(50);
+        
+        pilhaA.concatenar(pilhaB);
+        
+        System.out.println(pilhaA.toString());
     }
 }
